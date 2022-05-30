@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+}
+
+.contenedor {
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+
+}
+
+.header {
+  background: #000;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(225, 225, 226, 0.8);
+
+}
+
+.header h2 {
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+  text-transform: uppercase;
+
+  /*Centrado vertical */
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contenido {
+  
+  background: beige;
+  margin: 10px;
+  overflow:hidden;
+  
+}
+
+.main {
+  
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 60%;
+  float:right;
+ 
+}
+
+.aside { 
+  margin-right: 10px;
+  padding: 15px;
+  width: 30%;
+  float:left;
+ 
+}
+
+h1 {
+ 
+  font-weight: 200;
+  font-size: 24px;
+  color: rgb(125, 125, 179);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+ 
+}
+
+.aside p {
+  font-size: 16px;
+  color: rgb(39, 39, 73);
+  margin-bottom: 10px;
+  text-align: justify;
+  line-height: 150%;
+}
+
+.aside .galeria {
+  margin-top: 40px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px #444;
+  
+}
+
+.aside image {
+  width: 80%;
+}
+
+
+
+.main .info h1 {
+  font-weight: 200;
+  font-size: 24px;
+  color: rgb(125, 125, 179);
+  
+
+}
+
+.main .info p {
+  font-size: 16px;
+  color: rgb(39, 39, 73);
+  margin-bottom: 10px;
+  text-align: justify;
+  line-height: 150%;
+
+}
+
+.main .formulario {
+ 
+  margin: 20px;
+  border: 1px solid #ccc;
+  height: 320px;
+  overflow: hidden;
+ 
+}
+
+.formulario legend {
+  font-weight: 200;
+  font-size: 24px;
+  color: rgb(125, 125, 179);
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top:15px;
+  margin-bottom: 30px;
+
+}
+
+
+
+.formulario ul li {
+
+  list-style: none;
+  overflow: hidden;
+  
+}
+
+.formulario ul li input {
+  margin: 10px 10px 0px 0px;
+  width: 60%;
+  float:right;
+  
+  
+}
+
+.formulario ul li label {
+
+  font-size: 16px;
+  width:20%;
+  line-height: 40px;
+  margin-left: 30px;;
+  
+}
+.formulario ul li textarea{
+  margin: 10px 10px 0px 0px;
+  float:right;
+  width: 60%;
+  height: auto;
+ 
+}
+.formulario ul li button {
+  
+  margin-right:50px;
+  margin-top:20px;
+  margin-bottom: 10px;
+  float:right;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  transition: all 300ms;
+
+}
+
+.formulario ul li button:hover {
+  background: rgb(111, 175, 46);
+}
+.footer {
+  background: #ccc;
+  width: 100%;
+ 
+  height: 80px;
+  border: 1px solid rgba(225, 225, 226, 0.8);
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.footer p {
+  font-size: 26px;
+  color: aliceblue;
+}
+
+.footer .autor {
+  margin: 20px;
+  float:left;
+ 
+}
+
+.footer .contacto {
+  margin:20px;
+  float:right;
+}
+
+/*Diseño responsive*/
+@media screen and (max-width: 980px) {
+
+  .header h2 {
+    width: auto;
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+  
+    /*Centrado vertical */
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+ h1{
+   text-align: center;
+ }
+ p{
+  font-size:0.8em;
+ }
+  .main {
+  
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 90%;
+    clear:both;
+    
+   
+  }
+  
+  .aside { 
+    margin-right: 10px;
+    margin-left: 20px;
+    padding: 15px;
+    width: 90%;
+    clear:both;
+   
+  }
+  .aside image {
+    width: 40%;
+  }
+  .aside p {
+    font-size:0.8em;
+    margin-right: 20px;
+  }
+  
+  .footer, .header {
+    
+    width: 95%;
+    margin-right: 10px;
+    margin-left: 20px;
+   
+    
+  }
+}  
